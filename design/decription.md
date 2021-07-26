@@ -12,7 +12,7 @@ Description of design and game features / elements.
 - [UI](#ui)
 
 ## General Info
-Rules described in this document will be the standard rules and are subject to change. Many rules can be chang file
+Rules described in this document will be the standard rules and are subject to change. Many rules can be changed in config file
 
 - Player spawns in random house with no inventory and full vitals
 - Houses have randomly generated inventories
