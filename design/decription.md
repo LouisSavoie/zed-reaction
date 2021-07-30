@@ -7,6 +7,7 @@ Description of design and game features / elements.
 - [World](#world)
 - [Items](#items)
 - [Character](#character)
+- [Actions](#actions)
 - [Zed](#zed)
 - [Houses](#houses)
 - [UI](#ui)
@@ -40,13 +41,13 @@ More specific information can be found in the sections below
 
 ### Items
 - Food
-  > Used to replenish Hunger
+  > Used to replenish RNG Hunger
 - Water
-  > Used to replenish Thirst
+  > Used to replenish RNG Thirst
 - Weapons
   > Equipped to Hands, RNG damage at game start
 - Bandages
-  > Used to replenish Health
+  > Used to replenish RNG Health
 - Tools
   > Used to dismantle furniture
 - Materials
@@ -60,18 +61,19 @@ More specific information can be found in the sections below
 ### Character
 - Position
 - Vitals
-  - Health
+  - Health (current and max)
     > Player dies when empty, damaged by zed / empty hunger / empty thirst
-  - Hunger
+  - Hunger (current and max)
     > Decrease over time, when empty damages health over time, replenished with Food
-  - Thirst
+  - Thirst (current and max)
     > Decrease over time, when empty damages health over time, replenished with Water
 - Inventory
   > Starts empty
 - Equipment Slots
   - Hands
     > Hold a Weapon or Tools
-- Actions
+
+### Actions
   - Default
     - Search
       > Find Items RNG (Noisy)
@@ -97,7 +99,7 @@ More specific information can be found in the sections below
 
 ### Zed
 - Position
-  > RNG at game start, RNG moves toward Player when Player makes noise
+  > RNG at game start, RNG chance to move toward Player when Player makes noise
 - Health
   > RNG at game start
 - Damage
@@ -107,6 +109,8 @@ More specific information can be found in the sections below
 - Position
 - Inventory
   > RNG at game start
+- Found Items
+  > Inventory found by Player
 - barricades
   > Built by Player with wood & 2 nails
   - health

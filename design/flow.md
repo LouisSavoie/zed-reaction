@@ -65,7 +65,7 @@
 3. Update UI
 
 ## Search Click Event
-1. Add found items to house
+1. Add house inventory items to house found items
 2. [Zed Attack](#zed-attack)
 3. [Zed Move](#zed-move)
 4. Update UI
