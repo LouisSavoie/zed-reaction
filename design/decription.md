@@ -19,11 +19,11 @@ Rules described in this document will be the standard rules and are subject to c
 - A random number Zed will spawn in random positions on the map at game start
 - Player wins if they kill all Zed on map
 - Player loses if they die
-- Zed will attack baracades before entering Player's postion if they exist
-- Each house can have 1 baracade at a time
+- Zed will attack barricades before entering Player's position if they exist
+- Each house can have 1 barricade at a time
 - Each action a player takes is a turn, each turn all Zed also get an action to move or attack
 - Zed will not move unless the Player makes noise that turn
-- Actions that make noise are Search, Move, Dismantle, Baracade, and Attack Zed
+- Actions that make noise are Search, Move, Dismantle, barricade, and Attack Zed
 
 More specific information can be found in the sections below
 
@@ -44,16 +44,16 @@ More specific information can be found in the sections below
 - Water
   > Used to replenish Thirst
 - Weapons
-  > Equiped to Hands, RNG damage at game start
+  > Equipped to Hands, RNG damage at game start
 - Bandages
   > Used to replenish Health
 - Tools
-  > Used to dismatle furniture
+  > Used to dismantle furniture
 - Materials
   - Wood
-    > Used with Nails to build Baracades
+    > Used with Nails to build barricades
   - Nails
-    > Used with Wood to build Baracades
+    > Used with Wood to build barricades
 - Furniture
   > Can be dismantled with tools, gives Player RNG of wood &/ nails
 
@@ -74,9 +74,9 @@ More specific information can be found in the sections below
 - Actions
   - Default
     - Search
-      > Find Items RNG (Noisey)
+      > Find Items RNG (Noisy)
     - Move
-      > Move to an adjacent position (Noisey)
+      > Move to an adjacent position (Noisy)
   - Unlockable
     - By Item
       - Eat (Food)
@@ -88,12 +88,12 @@ More specific information can be found in the sections below
       - Heal (Bandage)
         > Replenishes Health
       - Dismantle (Tool)
-        > Dismantle Furniture (Noisey)
-      - Baracade (Wood & 2 Nails)
-        > Baracade current House (Noisey)
+        > Dismantle Furniture (Noisy)
+      - barricade (Wood & 2 Nails)
+        > barricade current House (Noisy)
     - By Zed at current position
       - Attack Zed
-        > Do Weapon or Unarmed damage to Zed (Noisey)
+        > Do Weapon or Unarmed damage to Zed (Noisy)
 
 ### Zed
 - Position
@@ -107,7 +107,7 @@ More specific information can be found in the sections below
 - Position
 - Inventory
   > RNG at game start
-- Baracades
+- barricades
   > Built by Player with wood & 2 nails
   - health
 
@@ -121,7 +121,7 @@ More specific information can be found in the sections below
     > List of Zed at current position and health indicator text (Healthy, Injured), delisted when dead
 - Character
   - Vitals
-    > Displays Health, Hunger, Thrist
+    > Displays Health, Hunger, Thirst
   - Inventory
     > List of Items, click Item to use or equip
 - House
