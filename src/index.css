@@ -1,13 +1,115 @@
+/* Elements */
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 1rem;
+  color: black;
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+h3 {
+  margin: 0 0 .5rem 0;
+  color: white;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+ul::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+ul::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: black;
+}
+
+ul::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: grey;
+}
+
+li {
+  list-style: none;
+}
+
+li:nth-child(2) {
+  background-color: rgb(30, 30, 30);
+}
+
+/* Custom IDs */
+
+#app {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: blanchedalmond;
+}
+
+#zed-here {
+  max-height: 4.5rem;
+}
+
+#found-items {
+  max-height: 7.5rem;
+}
+
+#player-items {
+  max-height: 7.5rem;
+}
+
+/* Bootstrap */
+
+.container {
+  max-width: 800px;
+}
+
+.progress {
+  border-radius: .75rem 0 .75rem 0;
+}
+
+.progress-bar {
+  border-radius: .75rem 0 .75rem 0;
+}
+
+.btn {
+  color: white;
+}
+
+.disabled {
+  color: grey;
+}
+
+.btn:hover {
+  color: yellow;
+}
+
+/* Custom Classes */
+
+.info-frame {
+  margin: 0 0 1rem 0;
+  padding: .5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  color: blanchedalmond;
+  background-color: black;
 }
