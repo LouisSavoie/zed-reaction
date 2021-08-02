@@ -3,17 +3,19 @@ function Zed() {
     <div className="zed">
       <div id="zed" className="info-frame">
         <h3>Zed</h3>
-        <div id="zed-here" className="list">
-          <div className="item">
+
+        <ul id="zed-here">
+          <li>
             <p>Carl</p>
-          </div>
-          <div className="item">
+          </li>
+          <li>
             <p>Bonnie</p>
-          </div>
-          <div className="item">
+          </li>
+          <li>
             <p>Walter</p>
-          </div>
-        </div>
+          </li>
+        </ul>
+
       </div>
     </div>
   );
