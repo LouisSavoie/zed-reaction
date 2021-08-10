@@ -1,6 +1,6 @@
 import Player from "./components/Player";
 import House from "./components/House";
-import Zed from "./components/Zed";
+import ZedHere from "./components/ZedHere";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
             <Player />
           </div>
           <div className="col">
-            <Zed />
+            <ZedHere />
             <House />
           </div>
         </div>
