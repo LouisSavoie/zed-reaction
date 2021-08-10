@@ -1,4 +1,12 @@
+import { useState } from 'react'
+
 function Player() {
+
+  const [position, setPosition] = useState(0,0)
+  const [vitals, setVitals] = useState({ health: 100, hunger: 100, thirst: 100 })
+  const [inventory, setInventory] = useState([])
+  const [equipped, setEquipped] = useState({ hands: { name: "Empty", damage: 0 } })
+
   return (
     <div className="player">
 
@@ -9,7 +17,7 @@ function Player() {
           <p className="col">Health</p>
           <div className="col">
             <div className="progress">
-              <div className="progress-bar" role="progressbar" style={{width: "80%", backgroundColor: "red"}} aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              <div className="progress-bar" role="progressbar" style={{width: vitals.health + "%", backgroundColor: "red"}} aria-valuenow={vitals.health} aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
@@ -18,7 +26,7 @@ function Player() {
           <p className="col">Hunger</p>
           <div className="col">
             <div className="progress">
-              <div className="progress-bar" role="progressbar" style={{width: "50%", backgroundColor: "green"}} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              <div className="progress-bar" role="progressbar" style={{width: vitals.hunger + "%", backgroundColor: "green"}} aria-valuenow={vitals.hunger} aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
@@ -27,7 +35,7 @@ function Player() {
           <p className="col">Thirst</p>
           <div className="col">
             <div className="progress">
-              <div className="progress-bar" role="progressbar" style={{width: "75%", backgroundColor: "blue"}} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              <div className="progress-bar" role="progressbar" style={{width: vitals.thirst + "%", backgroundColor: "blue"}} aria-valuenow={vitals.thirst} aria-valuemin="0" aria-valuemax="100"></div>
             </div>
           </div>
         </div>
@@ -42,7 +50,7 @@ function Player() {
             <p>Hands</p>
           </div>
           <div className="col text-center">
-            <p>Rifle</p>
+            <p>{equipped.hands.name}</p>
           </div>
         </div>
 
@@ -52,36 +60,11 @@ function Player() {
         <h3>Inventory</h3>
 
         <ul id="player-items">
-          <li>
-            <p>Food</p>
-          </li>
-          <li>
-            <p>Food</p>
-          </li>
-          <li>
-            <p>Food</p>
-          </li>
-          <li>
-            <p>Water</p>
-          </li>
-          <li>
-            <p>Water</p>
-          </li>
-          <li>
-            <p>Water</p>
-          </li>
-          <li>
-            <p>Bandage</p>
-          </li>
-          <li>
-            <p>Bandage</p>
-          </li>
-          <li>
-            <p>Bandage</p>
-          </li>
-          <li>
-            <p>Tools</p>
-          </li>
+          {inventory.map((item) => (
+            <li>
+              <p>{item.name}</p>
+            </li>
+          ))}
         </ul>
 
       </div>
