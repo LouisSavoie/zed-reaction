@@ -53,7 +53,7 @@ li {
   list-style: none;
 }
 
-li:nth-child(2) {
+li:nth-child(odd) {
   background-color: rgb(30, 30, 30);
 }
 

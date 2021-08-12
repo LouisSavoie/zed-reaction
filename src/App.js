@@ -1,8 +1,14 @@
+import { useState } from 'react'
 import Player from "./components/Player";
 import House from "./components/House";
-import Zed from "./components/Zed";
+import ZedHere from "./components/ZedHere";
 
 function App() {
+
+  const [houses, setHouses] = useState({})
+  const [zed, setZed] = useState({})
+  const [map, setMap] = useState([[{}]])
+
   return (
     <div id="app" className="container">
       <h1>Zed Reaction</h1>
@@ -12,7 +18,7 @@ function App() {
             <Player />
           </div>
           <div className="col">
-            <Zed />
+            <ZedHere />
             <House />
           </div>
         </div>

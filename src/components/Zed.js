@@ -1,24 +1,14 @@
+import { useState } from 'react'
+
 function Zed() {
+
+  const [position, setPosition] = useState(0,0)
+  const [health, setHealth] = useState(100)
+  const [damage, setDamage] = useState(Math.floor(Math.random() * 25))
+
   return (
-    <div className="zed">
-      <div id="zed" className="info-frame">
-        <h3>Zed</h3>
-
-        <ul id="zed-here">
-          <li>
-            <p>Carl</p>
-          </li>
-          <li>
-            <p>Bonnie</p>
-          </li>
-          <li>
-            <p>Walter</p>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  );
+    <></>
+  )
 }
 
 export default Zed;
